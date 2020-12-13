@@ -25,7 +25,7 @@ namespace Live
 			world = new World(80, 40, 16);
 			//g = this.CreateGraphics();
 			timer.Enabled = true;
-			timer.Interval = 4;  /* 100 millisec */
+			timer.Interval = 100;  /* 100 millisec */
 			timer.Tick += new EventHandler(TimerCallback);
 
 			InitializeComponent();
@@ -50,6 +50,7 @@ namespace Live
 					//g.DrawRectangle(new Pen(Color.Black), tile);
 				}
 			}
+			//copy
 			foreach (Plant p in this.world.Plants)
 			{
 				Color color = (Color)cc.ConvertFromString("#" + p.Color);

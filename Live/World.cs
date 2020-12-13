@@ -21,11 +21,12 @@ namespace Live
 			this.Width = width;
 			this.Height = height;
 			this.TileSize = tilesize;
-			GeneratePlants(45);
+			GeneratePlants(40);
 			GeneratePersons(25);
-			GenerateHerbivores(28);
+			GenerateHerbivores(33);
 			GeneratePredators(17);
 		}
+		//copy
 		public void GeneratePlants(int p)
 		{
 			for (int i = 0; i < this.Height; i++)
@@ -121,6 +122,7 @@ namespace Live
 			}
 			return amount;
 		}
+		//copy
 		public void NewPlant(int j, int i)
 		{
 			int r = random.Next(10);

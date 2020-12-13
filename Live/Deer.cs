@@ -10,10 +10,10 @@ namespace Live
 	{
 		public Deer(int _x, int _y, World world) : base(_x, _y, world)
 		{
-			LimitSatur = 25;
+			LimitSatur = 30;
 			LimitAge = 100;
 			Saturation = 50;
-			LimitSatiety = 20;
+			LimitSatiety = 30;
 			FoodList.Add(typeof(Grass));
 			FoodList.Add(typeof(Bush));
 			FoodList.Add(typeof(Tree));

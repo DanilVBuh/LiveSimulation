@@ -60,6 +60,7 @@ namespace Live
 			}
 		}
 
+		//copy
 		public virtual void FindFood()
 		{
 		}

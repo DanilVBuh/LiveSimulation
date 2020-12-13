@@ -11,9 +11,9 @@ namespace Live
 		public Fox(double _x, double _y, World world) : base(_x, _y, world)
 		{
 			LimitSatur = 30;
-			LimitAge = 120;
+			LimitAge = 90;
 			Saturation = 30;
-			LimitSatiety = 20;
+			LimitSatiety = 15;
 			FoodList.Add(typeof(Mouse));
 			FoodList.Add(typeof(Hare));
 			Speed = 1.5;

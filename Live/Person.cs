@@ -62,6 +62,9 @@ namespace Live
 				}
 			}
 		}
+
+
+		//cond
 		public void Step()
 		{
 			if (House == null)
@@ -83,6 +86,7 @@ namespace Live
 					StepToHome(House);
 			}
 		}
+		//cond
 		public void StepToHome(Unit place)
 		{
 			if (place.x < x)
@@ -100,6 +104,7 @@ namespace Live
 					y++;
 			}
 		}
+		//cond
 		public void CreateFamily()
 		{
 			double dist = Math.Sqrt(Math.Pow(World.Height, 2) + Math.Pow(World.Width, 2)) + 1;
@@ -210,6 +215,8 @@ namespace Live
 				Satiety = 70;
 			}
 		}
+
+		//long
 		public override void FindFood()
 		{
 			Plant nearestFood = null;
@@ -277,6 +284,7 @@ namespace Live
 				RandomStep();
 		}
 
+		//cond
 		public void ThinkAboutFarm()
 		{
 			if (Farm == null)
